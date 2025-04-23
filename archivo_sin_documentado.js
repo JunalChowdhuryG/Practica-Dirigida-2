@@ -1,5 +1,4 @@
-// funcion documentada
+// documentacion para ser commiteado
 function inicio(){
-    // funcion documentada
     return "Archivo sin documentar"
 }

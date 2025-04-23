@@ -446,17 +446,31 @@ function merge_automatizado() {
 }
 
 
+function generar_reporte_git() {
+    echo ""
+    echo "generando reporte del repositorio"
+    archivo_reporte="reporte_git.txt"
 
+    {
+        echo "REPORTE DEL REPOSITORIO "
+        echo ""
+        echo "=== Estado del repositorio ==="
+        git status
+        echo ""
+        echo "=== Ramas existentes ==="
+        git branch
+        echo ""
+        echo "=== Últimos 5 commits ==="
+        git log --oneline -n 5
+        echo ""
+        echo "=== Lista de stashes ==="
+        git stash list
+        echo ""
+        echo " FIN DEL REPORTE"
+    } > "$archivo_reporte"
 
-
-
-
-
-
-
-
-
-
+    echo "reporte generado en '$archivo_reporte'"
+}
 
 
 # Bucle principal del menú
