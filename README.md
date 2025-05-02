@@ -1,5 +1,5 @@
 # **Practica Dirigida 2**
-
+`Chowdhury Gomez Junal`
 ## **Registro y configuracion**
 ![](img/pd-2-1-primera-interaccion.png)
 
